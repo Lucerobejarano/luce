@@ -1,0 +1,102 @@
+        <!-- Agrega más productos aquí -->
+    </div>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #00577C; /* Color azul marino */
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif; /* Formato sans serif para el título */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 70px;
+    bottom: 30px;
+}
+
+.product {
+    width: 250px; /* Ajusta el ancho del contenedor del producto */
+    border-radius: 5px;
+    padding: 30px;
+    margin: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product h2 {
+    margin: -5px -35;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 26px;
+    text-align: center;
+    color: #333; /* Color del título por defecto */
+    transition: color 0.3s; /* Transición para el cambio de color al hacer hover */
+    max-width: 300px; /* Ajusta el ancho máximo del título */
+}
+
+/* Cambio de color del título al hacer hover */
+.product h2:hover {
+    color: #ff0000; /* Color rojo al hacer hover */
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+.image-container {
+    width: 150%;
+    height: 180px; /* Ajusta el alto del contenedor según el tamaño deseado */
+    padding-bottom: 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover; /* Ajusta cómo se adapta la imagen al contenedor sin recortar */
+    border-radius: 7px;
+    transition: transform 1s; /* Transición más lenta para el efecto zoom */
+}
+
+/* Efecto de zoom al hacer hover solo en la imagen de cada producto */
+.product:hover .image-container img {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen (acercar) al hacer hover */
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+.more-info-btn-container {
+    display: flex;
+    justify-content: center; /* Centrar los botones horizontalmente */
+}
+
+.more-info-btn {
+    display: block;
+    margin-top: 15px;
+    padding: 15px 35px;
+    background-color: #1A5276; /* Azul marino */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.more-info-btn:hover {
+    background-color: #0D3F5F; /* Azul marino más oscuro al pasar el cursor */
+}
